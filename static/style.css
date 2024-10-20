@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #b6b6b9; /* Light grey background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    background: #B8DBD9; /* Soft light teal for form container */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 0.5s;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #000; /* Black for better readability */
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 12px;
+    color: #586F7C; /* Muted teal for icons */
+}
+
+input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #586F7C; /* Muted teal for input border */
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #04724D; /* Dark green on focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(4, 114, 77, 0.5); /* Dark green shadow for focus */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #04724D; /* Dark green for button */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #586F7C; /* Muted teal on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-btn {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #586F7C; /* Muted teal for social buttons */
+    color: white; /* White text for contrast */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #04724D; /* Dark green on hover */
+}
+
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #586F7C; /* Muted teal for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
